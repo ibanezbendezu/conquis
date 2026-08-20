@@ -65,7 +65,6 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Toolbar: Search, Filters, Sort, View */}
           <section className={`mb-8 p-4 rounded-xl border ${isDark ? "bg-neutral-900/50 border-neutral-800" : "bg-white border-neutral-200 shadow-sm"}`}>
             <div className="flex flex-col lg:flex-row gap-4">
 
