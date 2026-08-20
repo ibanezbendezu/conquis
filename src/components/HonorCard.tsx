@@ -1,5 +1,5 @@
 // src/components/HonorCard.tsx
-import {Honor, categoryThemes} from "../data/honors";
+import {Honor, categoryThemes} from "@/data/honors";
 import {Layers} from "lucide-react";
 
 interface HonorCardProps {

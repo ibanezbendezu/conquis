@@ -80,7 +80,7 @@ export const honorData: Honor[] = [
         origin: "GC",
         name: "Inteligencia Emocional",
         category: "Actividades Misioneras",
-        imageUrl: "/placeholders/inteligencia-emocional.png",
+        imageUrl: "/placeholders/am056.jpg",
         requirements: [
             {id: 1, description: "Definir inteligencia emocional."},
             {

@@ -4,7 +4,7 @@
 import {useState, useMemo} from "react";
 import {Search, Sun, Moon, LayoutGrid, List as ListIcon, Filter, ArrowUpDown, X} from "lucide-react";
 import {AnimatePresence} from "framer-motion";
-import {honorData, categories, Honor} from "../data/honors";
+import {honorData, categories, Honor} from "@/data/honors";
 import HonorCard from "../components/HonorCard";
 import HonorModal from "../components/HonorModal";
 
