@@ -61,7 +61,7 @@ export const categoryThemes: Record<string, CategoryTheme> = {
         light: {base: "#E4002B", surface: "#FFF1F2", text: "#BE123C", backdrop: "rgba(228, 0, 43, 0.15)"},
         dark: {base: "#E11D48", surface: "#4C0519", text: "#FDA4AF", backdrop: "rgba(225, 29, 72, 0.15)"}
     },
-    "Doctrinal": {
+    "Estudio Bíblico": {
         light: {base: "#5CE0E2", surface: "#F0FDFA", text: "#0F766E", backdrop: "rgba(92, 224, 226, 0.15)"},
         dark: {base: "#22D3EE", surface: "#064E3B", text: "#67E8F9", backdrop: "rgba(34, 211, 238, 0.15)"}
     },
@@ -72,12 +72,12 @@ export const categories: string[] = ["Todas", ...Object.keys(categoryThemes)];
 // Datos de prueba con los nuevos atributos
 export const honorData: Honor[] = [
     {
-        id: "MIS-016",
-        categoryCode: "MIS",
-        honorId: 16,
-        level: 2,
-        year: 2024,
-        origin: "GC",
+        id: "AM-056",
+        categoryCode: "AM",
+        honorId: 56,
+        level: 1,
+        year: 2025,
+        origin: "DSA",
         name: "Inteligencia Emocional",
         category: "Actividades Misioneras",
         imageUrl: "/placeholders/am056.jpg",
@@ -147,12 +147,12 @@ export const honorData: Honor[] = [
     // Copia estos objetos y agrégalos a tu array honorData:
 
     {
-        id: "MIS-003",
-        categoryCode: "MIS",
-        honorId: 3,
+        id: "AM-060",
+        categoryCode: "AM",
+        honorId: 60,
         level: 2,
-        year: 2024,
-        origin: "GC",
+        year: 2025,
+        origin: "DSA",
         name: "Relaciones Saludables",
         category: "Actividades Misioneras",
         imageUrl: "/placeholders/am060.jpg",
@@ -205,12 +205,12 @@ export const honorData: Honor[] = [
         ]
     },
     {
-        id: "MIS-004",
-        categoryCode: "MIS",
-        honorId: 4,
+        id: "AM-050",
+        categoryCode: "AM",
+        honorId: 50,
         level: 2,
-        year: 2024,
-        origin: "GC",
+        year: 2025,
+        origin: "DSA",
         name: "Estudio de Lenguas",
         category: "Actividades Misioneras",
         imageUrl: "/placeholders/am050.jpg",
@@ -241,12 +241,12 @@ export const honorData: Honor[] = [
         ]
     },
     {
-        id: "NAT-002",
-        categoryCode: "NAT",
-        honorId: 2,
-        level: 2,
-        year: 2024,
-        origin: "GC",
+        id: "EN-104",
+        categoryCode: "EN",
+        honorId: 104,
+        level: 1,
+        year: 2025,
+        origin: "DSA",
         name: "Primates",
         category: "Estudio de la Naturaleza",
         imageUrl: "/placeholders/en105.jpg",
@@ -283,12 +283,12 @@ export const honorData: Honor[] = [
         ]
     },
     {
-        id: "ART-001",
-        categoryCode: "ART",
-        honorId: 1,
+        id: "AP-067",
+        categoryCode: "AP",
+        honorId: 67,
         level: 2,
-        year: 2024,
-        origin: "GC",
+        year: 2025,
+        origin: "DSA",
         name: "Seguridad en Redes Sociales",
         category: "Artes Vocacionales",
         imageUrl: "/placeholders/ap067.jpg",
@@ -331,14 +331,14 @@ export const honorData: Honor[] = [
         ]
     },
     {
-        id: "DOC-002",
-        categoryCode: "DOC",
-        honorId: 2,
-        level: 2,
-        year: 2026,
-        origin: "GC",
+        id: "AM-EB-004",
+        categoryCode: "AM-EB",
+        honorId: 4,
+        level: 1,
+        year: 2025,
+        origin: "DSA",
         name: "Dios Hijo",
-        category: "Doctrinal",
+        category: "Estudio Bíblico",
         imageUrl: "/placeholders/eb004.jpg",
         requirements: [
             {id: 1, description: "Saber por qué Dios Hijo recibe el nombre de Jesús (Mateo 1:21)."},
