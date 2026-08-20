@@ -72,33 +72,6 @@ export const categories: string[] = ["Todas", ...Object.keys(categoryThemes)];
 // Datos de prueba con los nuevos atributos
 export const honorData: Honor[] = [
     {
-        id: "SOC-001",
-        categoryCode: "SOC",
-        honorId: 1,
-        level: 2,
-        year: 2024,
-        origin: "GC",
-        name: "Seguridad en Redes Sociales",
-        category: "Artes Vocacionales",
-        imageUrl: "/placeholders/seguridad-redes.png",
-        requirements: [
-            { id: 1, description: "¿Qué son las redes sociales?" },
-            { id: 2, description: "¿Qué es la interactividad digital?" },
-            { id: 3, description: "¿Cuáles son las principales características de las redes sociales?" },
-            { id: 4, description: "¿Cómo las redes sociales han cambiado el comportamiento de las personas?" },
-            { id: 5, description: "Explicar qué significa tener buenas relaciones en las redes sociales." },
-            { id: 6, description: "¿Qué es oversharing (compartir demasiado)? ¿Por qué es importante evitar compartir información excesiva sobre nuestra vida personal en las redes sociales?" },
-            { id: 7, description: "Hacer una lista de cinco datos personales que no se deben compartir públicamente en las redes sociales." },
-            { id: 8, description: "Decir tres maneras de proteger su privacidad en línea." },
-            { id: 9, description: "¿Cuáles son las consecuencias de publicar fotos o información vergonzosa sobre otras personas en las redes sociales?" },
-            { id: 10, description: "¿Por qué un perfil falso en una red social puede ser un riesgo para las personas, especialmente para niños y adolescentes?" },
-            { id: 11, description: "Desarrollar un conjunto de pautas para abordar mensajes de odio o comentarios irrespetuosos en las redes sociales. Incluir estrategias para bloquear, denunciar y mantener la calma en estas situaciones." },
-            { id: 12, description: "¿Por qué es importante que los padres estén al tanto de las actividades de sus hijos en las redes sociales? Dar tres razones." },
-            { id: 13, description: "¿Cómo han ayudado las redes sociales a difundir el evangelio de Cristo?" },
-            { id: 14, description: "Según las enseñanzas de Jesús, ¿cómo podemos demostrar amor y bondad en las interacciones en línea? Dar ejemplos de actitudes que reflejen el amor de Jesús al interactuar con otras personas en las redes sociales." }
-        ]
-    },
-    {
         id: "MIS-016",
         categoryCode: "MIS",
         honorId: 16,
