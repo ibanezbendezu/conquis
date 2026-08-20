@@ -84,7 +84,6 @@ export default function Home() {
                 />
               </div>
 
-              {/* Controls (Category, Sort, View) */}
               <div className="flex flex-wrap items-center gap-3">
 
                 {/* Category Filter */}
