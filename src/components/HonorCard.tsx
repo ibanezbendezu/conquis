@@ -27,17 +27,17 @@ export default function HonorCard({ honor, onClick, isDark, viewMode }: HonorCar
                     isDark ? "bg-neutral-900 border-neutral-800 text-neutral-100" : "bg-white border-neutral-200 text-neutral-900 shadow-sm"
                 }`}
             >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 min-w-0">
                     <div>
                         <div className="flex items-center gap-2 mb-1">
-               <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-sm ${isDark ? "bg-neutral-800 text-neutral-400" : "bg-neutral-100 text-neutral-500"}`}>
-                 {honor.categoryCode}-{String(honor.honorId).padStart(3, '0')}
-               </span>
+                           <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-sm ${isDark ? "bg-neutral-800 text-neutral-400" : "bg-neutral-100 text-neutral-500"}`}>
+                             {honor.categoryCode}-{String(honor.honorId).padStart(3, '0')}
+                           </span>
                             <span className={`text-[11px] ${isDark ? "text-neutral-400" : "text-neutral-500"}`}>
-                 {honor.category}
-               </span>
+                             {honor.category}
+                           </span>
                         </div>
-                        <h3 className="text-base font-semibold tracking-tight text-[var(--theme-text)] transition-colors">
+                        <h3 className="text-base font-semibold tracking-tight text-[var(--theme-text)] transition-colors truncate">
                             {honor.name}
                         </h3>
                     </div>
@@ -61,11 +61,12 @@ export default function HonorCard({ honor, onClick, isDark, viewMode }: HonorCar
             }`}
         >
             <div className="flex justify-between items-start w-full gap-2">
-        <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-sm ${isDark ? "bg-neutral-800 text-neutral-400" : "bg-neutral-100 text-neutral-500"}`}>
-          {honor.categoryCode}-{String(honor.honorId).padStart(3, '0')}
-        </span>
-                <div className={`flex items-center gap-1 text-[10px] font-medium px-1.5 py-0.5 rounded-md ${isDark ? "bg-neutral-800 text-neutral-400" : "bg-neutral-100 text-neutral-500"}`}>
-                    <Layers className="w-3 h-3" /> Lvl {honor.level}
+            <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-sm truncate ${isDark ? "bg-neutral-800 text-neutral-400" : "bg-neutral-100 text-neutral-500"}`}>
+              {honor.categoryCode}-{String(honor.honorId).padStart(3, '0')}
+            </span>
+                {/* AQUÍ ESTÁ LA SOLUCIÓN: Agregamos whitespace-nowrap y flex-shrink-0 */}
+                <div className={`flex items-center gap-1 text-[10px] font-medium px-1.5 py-0.5 rounded-md whitespace-nowrap flex-shrink-0 ${isDark ? "bg-neutral-800 text-neutral-400" : "bg-neutral-100 text-neutral-500"}`}>
+                    <Layers className="w-3 h-3 flex-shrink-0" /> Lvl {honor.level}
                 </div>
             </div>
             <div>
