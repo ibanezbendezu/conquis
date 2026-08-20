@@ -15,12 +15,12 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("Todas");
   const [selectedHonor, setSelectedHonor] = useState<Honor | null>(null);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [sortOrder, setSortOrder] = useState<SortOption>("name-asc");
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
 
   const filteredHonors = useMemo(() => {
-    let result = honorData.filter((honor) => {
+    const result = honorData.filter((honor) => {
       const matchesCategory = selectedCategory === "Todas" || honor.category === selectedCategory;
       const searchLower = searchQuery.toLowerCase();
       const matchesSearch =
