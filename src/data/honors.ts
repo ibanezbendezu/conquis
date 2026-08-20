@@ -155,7 +155,7 @@ export const honorData: Honor[] = [
         origin: "GC",
         name: "Relaciones Saludables",
         category: "Actividades Misioneras",
-        imageUrl: "/placeholders/relaciones-saludables.png",
+        imageUrl: "/placeholders/am060.jpg",
         requirements: [
             {id: 1, description: "Describir la importancia de las relaciones para los seres humanos."},
             {id: 2, description: "Comprender la definición de una relación tóxica y una relación sana."},
@@ -213,7 +213,7 @@ export const honorData: Honor[] = [
         origin: "GC",
         name: "Estudio de Lenguas",
         category: "Actividades Misioneras",
-        imageUrl: "/placeholders/lenguas.png",
+        imageUrl: "/placeholders/am050.jpg",
         requirements: [
             {
                 id: 1,
@@ -249,7 +249,7 @@ export const honorData: Honor[] = [
         origin: "GC",
         name: "Primates",
         category: "Estudio de la Naturaleza",
-        imageUrl: "/placeholders/primates.png",
+        imageUrl: "/placeholders/en105.jpg",
         requirements: [
             {id: 1, description: "¿Cuáles son las principales características de los primates?"},
             {
@@ -291,7 +291,7 @@ export const honorData: Honor[] = [
         origin: "GC",
         name: "Seguridad en Redes Sociales",
         category: "Artes Vocacionales",
-        imageUrl: "/placeholders/seguridad-redes.png",
+        imageUrl: "/placeholders/ap067.jpg",
         requirements: [
             {id: 1, description: "¿Qué son las redes sociales?"},
             {id: 2, description: "¿Qué es la interactividad digital?"},
@@ -339,7 +339,7 @@ export const honorData: Honor[] = [
         origin: "GC",
         name: "Dios Hijo",
         category: "Doctrinal",
-        imageUrl: "/placeholders/dios-hijo.png",
+        imageUrl: "/placeholders/eb004.jpg",
         requirements: [
             {id: 1, description: "Saber por qué Dios Hijo recibe el nombre de Jesús (Mateo 1:21)."},
             {

@@ -66,9 +66,18 @@ export default function HonorModal({honor, onClose, isDark}: HonorModalProps) {
                             <X className="w-5 h-5"/>
                         </button>
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-[var(--theme-text)]">
-                        {honor.name}
-                    </h2>
+                    <div className="flex items-center gap-4 sm:gap-6 mt-2">
+                        <div className="relative w-12 h-11 flex-shrink-0 rounded-full overflow-hidden shadow-md bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700">
+                            <img
+                                src={honor.imageUrl}
+                                alt={`Parche de ${honor.name}`}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-[var(--theme-text)]">
+                            {honor.name}
+                        </h2>
+                    </div>
                 </div>
 
                 <div className="p-6 overflow-y-auto">
