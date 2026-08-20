@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex justify-between items-center mb-8">
             <header>
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">
-                Especialidades <span className="text-teal-700 dark:text-teal-400">Conquistadores</span>
+                Especialidades Conquistadores
               </h1>
             </header>
 
@@ -78,7 +78,7 @@ export default function Home() {
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className={`block w-full pl-10 pr-4 py-2 border rounded-lg text-sm leading-5 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all ${
+                    className={`block w-full pl-10 pr-4 py-2 border rounded-lg text-sm leading-5 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-600 transition-all ${
                         isDark ? "bg-neutral-900 border-neutral-700 text-neutral-100" : "bg-neutral-50 border-neutral-200 text-neutral-900"
                     }`}
                     placeholder="Buscar por nombre o requisito..."
@@ -94,7 +94,7 @@ export default function Home() {
                   <select
                       value={selectedCategory}
                       onChange={(e) => setSelectedCategory(e.target.value)}
-                      className={`pl-9 pr-8 py-2 appearance-none border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-teal-600 cursor-pointer ${
+                      className={`pl-9 pr-8 py-2 appearance-none border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-neutral-600 cursor-pointer ${
                           isDark ? "bg-neutral-900 border-neutral-700 text-neutral-200" : "bg-neutral-50 border-neutral-200 text-neutral-700"
                       }`}
                   >
@@ -110,7 +110,7 @@ export default function Home() {
                   <select
                       value={sortOrder}
                       onChange={(e) => setSortOrder(e.target.value as SortOption)}
-                      className={`pl-9 pr-8 py-2 appearance-none border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-teal-600 cursor-pointer ${
+                      className={`pl-9 pr-8 py-2 appearance-none border rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-neutral-600 cursor-pointer ${
                           isDark ? "bg-neutral-900 border-neutral-700 text-neutral-200" : "bg-neutral-50 border-neutral-200 text-neutral-700"
                       }`}
                   >
@@ -124,13 +124,13 @@ export default function Home() {
                 <div className={`flex items-center border rounded-lg p-0.5 ml-auto lg:ml-0 ${isDark ? "border-neutral-700 bg-neutral-900" : "border-neutral-200 bg-neutral-50"}`}>
                   <button
                       onClick={() => setViewMode("grid")}
-                      className={`p-1.5 rounded-md transition-colors ${viewMode === "grid" ? (isDark ? "bg-neutral-800 text-teal-400" : "bg-white text-teal-700 shadow-sm") : (isDark ? "text-neutral-500 hover:text-neutral-300" : "text-neutral-400 hover:text-neutral-600")}`}
+                      className={`p-1.5 rounded-md transition-colors ${viewMode === "grid" ? (isDark ? "bg-neutral-800 text-neutral-400" : "bg-white text-neutral-700 shadow-sm") : (isDark ? "text-neutral-500 hover:text-neutral-300" : "text-neutral-400 hover:text-neutral-600")}`}
                   >
                     <LayoutGrid className="h-4 w-4" />
                   </button>
                   <button
                       onClick={() => setViewMode("list")}
-                      className={`p-1.5 rounded-md transition-colors ${viewMode === "list" ? (isDark ? "bg-neutral-800 text-teal-400" : "bg-white text-teal-700 shadow-sm") : (isDark ? "text-neutral-500 hover:text-neutral-300" : "text-neutral-400 hover:text-neutral-600")}`}
+                      className={`p-1.5 rounded-md transition-colors ${viewMode === "list" ? (isDark ? "bg-neutral-800 text-neutral-400" : "bg-white text-neutral-700 shadow-sm") : (isDark ? "text-neutral-500 hover:text-neutral-300" : "text-neutral-400 hover:text-neutral-600")}`}
                   >
                     <ListIcon className="h-4 w-4" />
                   </button>

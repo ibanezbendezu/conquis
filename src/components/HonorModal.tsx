@@ -45,7 +45,7 @@ export default function HonorModal({ honor, onClose, isDark }: HonorModalProps) 
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 10 }}
                 transition={{ duration: 0.2, ease: "easeOut" }}
-                className={`relative w-full max-w-2xl max-h-[85vh] overflow-hidden rounded-xl shadow-2xl flex flex-col border bg-[var(--theme-surface)] ${
+                className={`relative w-full max-w-3xl max-h-[85vh] overflow-hidden rounded-xl shadow-2xl flex flex-col border bg-[var(--theme-surface)] ${
                     isDark ? "border-neutral-800" : "border-neutral-200"
                 }`}
             >
@@ -99,12 +99,23 @@ export default function HonorModal({ honor, onClose, isDark }: HonorModalProps) 
                     <ul className="space-y-4">
                         {honor.requirements.map((req) => (
                             <li key={req.id} className="flex gap-4">
-                <span className="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold mt-0.5 border bg-[var(--theme-base)] text-white border-[var(--theme-base)]">
-                  {req.id}
-                </span>
-                                <p className="text-sm md:text-base leading-relaxed text-[var(--theme-text)]">
-                                    {req.description}
-                                </p>
+            <span className="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full text-xs font-bold mt-0.5 border bg-[var(--theme-base)] text-white border-[var(--theme-base)]">
+              {req.id}
+            </span>
+                                <div className="flex-1">
+                                    <p className="text-sm md:text-base leading-relaxed text-[var(--theme-text)]">
+                                        {req.description}
+                                    </p>
+                                    {req.sub && req.sub.length > 0 && (
+                                        <ul className="mt-2 space-y-1.5 pl-5 list-[lower-alpha] text-sm md:text-base text-[var(--theme-text)] opacity-90">
+                                            {req.sub.map((subItem, idx) => (
+                                                <li key={idx} className="leading-relaxed pl-1">
+                                                    {subItem}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
                             </li>
                         ))}
                     </ul>
